@@ -1,0 +1,709 @@
+/*
+ * Variables
+ */
+:root {
+    --primary-color: #2f73b6;
+    --secondary-color: #d01561;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+
+/*
+ * Header
+ */
+.logo-header {
+    width: 40%;
+}
+
+
+/*
+ * Footer
+ */
+.reseaux-sociaux a {
+    height: 40px;
+    width: 40px;
+    background: var(--primary-color) ;
+    color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.footer-text {
+    font-size: 18px;
+}
+
+.reseaux-sociaux a:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color);
+    background: var(--bg-color);
+}
+
+.link-footer {
+    color: var(--black-color);
+    text-decoration: none;
+    transition: .4s;
+}
+
+.link-footer:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: .4s;
+}
+
+
+/*
+ * Connexion
+ */
+.webylo-acc {
+    height: 80%;
+}
+
+.lblCon {
+    position: relative!important;
+}
+
+.lblCon input {
+    transition: all 0.2s;
+}
+
+.lblCon .password-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    transition: all 0.2s;
+    right: 20px;
+}
+
+.lblCon .password-icon .bx-low-vision{
+    display: none;
+}
+
+.lblCon .password-icon:hover {
+    cursor: pointer;
+}
+
+
+/*
+ * Dashboard
+ */
+#Progress_Status {
+   width: 90%;
+   background-color: var(--white-color);
+   margin-bottom: 10px;
+   margin-left: 5%;
+}
+   
+.myprogressBar {
+   width: 1%;
+   height: 8px;
+   background-color: rgb(211, 211, 211);
+   text-align: center;
+   line-height: 32px;
+   color: rgb(88, 88, 88);
+   border-radius: 10px;
+   justify-content: center;
+}
+
+.imgToast {
+   width: 8%;
+}
+
+#Progress_StatusE {
+   width: 90%;
+   background-color: #b11b1b;
+   margin-bottom: 10px;
+   margin-left: 5%;
+}
+   
+.myprogressBarE {
+   width: 1%;
+   height: 10px;
+   background-color: #751b1b;
+   text-align: center;
+   line-height: 32px;
+   color: black;
+   border-radius: 10px;
+   justify-content: center;
+}
+
+.nbInscriptions {
+    background: var(--secondary-color);
+    padding: 30px 25px 30px 25px;
+    text-decoration: none!important;
+    font-size: 20px;
+    color: var(--white-color);
+    border: none;
+    border-radius: 25px; 
+    transition: 0.4s;
+}
+
+.nbInscriptions:hover {
+    transform: translateY(-12px);
+    transition: 0.4s;
+}
+
+.numberI {
+    font-size: 28px;
+}
+
+.inscriptionsAccepte {
+    background: #F8F9FA;
+    padding: 30px 25px 30px 25px;
+    text-decoration: none;
+    color: var(--black-color);
+    border: solid 1px;
+    border-radius: 25px; 
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.inscriptionsAccepte:hover {
+    transform: translateY(-12px);
+    transition: 0.4s;
+}
+
+.inscriptionsRefuse {
+    background: #F8F9FA;
+    padding: 30px 25px 30px 25px;
+    text-decoration: none;
+    color: var(--black-color);
+    border: solid 1px;
+    border-radius: 25px;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.inscriptionsRefuse:hover {
+    transform: translateY(-12px);
+    transition: 0.4s;
+}
+
+.inscriptionsAttente {
+    background: #F8F9FA;
+    padding: 30px 25px 30px 25px;
+    text-decoration: none;
+    color: var(--black-color);
+    border: solid 1px;
+    border-radius: 25px;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.inscriptionsAttente:hover {
+    transform: translateY(-12px);
+    transition: 0.4s;
+}
+
+.icon-dashT {
+    font-size: 28px;
+}
+
+.icon-dashA {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.icon-dashR {
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+
+.tableDash {
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.actionsAcc {
+    color: green;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.actionsRef {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.actionsEdit {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.actionsDelete {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.actionsOff {
+    color: green;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.actionsOn {
+    color: orangered;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.statutAcc {
+    color: white!important;
+    background-color: green;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px 8px;
+    margin-bottom: 1px!important;
+}
+
+.En {
+    color: white!important;
+    background-color: orange;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px 8px;
+    margin-bottom: 1px!important;
+}
+
+.Refusé {
+    color: white!important;
+    background-color: red;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px;
+    margin-bottom: 1px!important;
+}
+
+.Accepté {
+    color: white!important;
+    background-color: green;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px 8px;
+    margin-bottom: 1px!important;
+}
+
+.statutRef {
+    color: white!important;
+    background-color: red;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px;
+    margin-bottom: 1px!important;
+}
+
+.statutAtt {
+    color: white!important;
+    background-color: orange;
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    padding: 6px 8px;
+    margin-bottom: 1px!important;
+}
+
+.addButton {
+    background: blue;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 8px;
+}
+
+.bootstrap-table .fixed-table-container .fixed-table-body {
+    height: auto!important;
+}
+
+.pagination-detail {
+    visibility: hidden!important;
+}
+
+.active>.page-link, .page-link.active {
+    background-color: var(--secondary-color)!important;
+    border-color: var(--secondary-color)!important;
+}
+
+.page-link {
+    color: var(--secondary-color)!important;
+}
+
+.modal-confirm {		
+	color: #636363;
+	width: 400px;
+}
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+	font-size: 14px;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -2px;
+    border: none;
+    background-color: white;
+    font-size: 28px;
+}
+.modal-confirm .modal-body {
+	color: #999;
+    font-size: 16px;
+}
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;		
+	border-radius: 5px;
+	font-size: 13px;
+	padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+	color: #999;
+}		
+.modal-confirm .icon-box {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	border-radius: 50%;
+	z-index: 9;
+	text-align: center;
+	border: 3px solid #f15e5e;
+}
+.modal-confirm .icon-box i {
+	color: #f15e5e;
+	font-size: 46px;
+	display: inline-block;
+	margin-top: 13px;
+}
+.modal-confirm .icon-boxA {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	border-radius: 50%;
+	z-index: 9;
+	text-align: center;
+	border: 3px solid green;
+}
+.modal-confirm .icon-boxA i {
+	color: green;
+	font-size: 46px;
+	display: inline-block;
+	margin-top: 13px;
+}
+.modal-confirm .btn, .modal-confirm .btn:active {
+	color: #fff;
+	border-radius: 4px;
+	background: #60c7c1;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	min-width: 120px;
+	border: none;
+	min-height: 40px;
+	border-radius: 3px;
+	margin: 0 5px;
+}
+.modal-confirm .btn-secondary {
+	background: #c1c1c1;
+}
+.modal-confirm .btn-secondary:hover, .modal-confirm .btn-secondary:focus {
+	background: #a8a8a8;
+}
+.modal-confirm .btn-danger {
+	background: #f15e5e;
+}
+.modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+	background: #ee3535;
+}
+
+
+/*
+ * editCandidat
+ */
+.infoPerso {
+    background: #F7F7F7;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.infoComp {
+    background: #444444;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.infoNote {
+    background: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+/*
+ * Erreur 404
+ */
+.pErreur {
+    margin-top: 340px!important;
+    margin-bottom: 340px!important;
+}
+
+
+/*
+ * AddPoste
+ */
+.pAddP {
+    margin-top: 140px!important;
+    margin-bottom: 140px!important;
+}
+
+ 
+/*
+ * AddStatut
+ */
+ .pAddS {
+    margin-top: 228px!important;
+    margin-bottom: 228px!important;
+}
+
+
+/*
+ * AddUtilisateur
+ */
+ .pAddU {
+    margin-top: 30px!important;
+    margin-bottom: 30px!important;
+}
+
+
+/*
+ * Mdp-Oublie
+ */
+ .pMdpO {
+    margin-top: 220px!important;
+    margin-bottom: 220px!important;
+}
+
+
+/*
+ * Code-Mdp-Oublie
+ */
+ .pMdpCo {
+    margin-top: 195px!important;
+    margin-bottom: 195px!important;
+}
+
+
+/*
+ * change-mdp
+ */
+ .pMdpCh {
+    margin-top: 235px!important;
+    margin-bottom: 235px!important;
+}
+
+
+/*
+ * EditPoste
+ */
+ .pEditP {
+    margin-top: 75px!important;
+    margin-bottom: 75px!important;
+}
+
+
+/*
+ * EditStatut
+ */
+ .pEditS {
+    margin-top: 255px!important;
+    margin-bottom: 255px!important;
+}
+
+
+/*
+ * EditUtilisateur
+ */
+.lblU {
+    position: relative!important;
+}
+
+.lblU input {
+    transition: all 0.2s;
+}
+
+.lblU .password-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-75%);
+    width: 20px;
+    transition: all 0.2s;
+    right: 20px;
+}
+
+.lblU .password-icon .bx-low-vision{
+    display: none;
+}
+
+.lblU .password-icon:hover {
+    cursor: pointer;
+}
+ 
+
+/*
+ * General css
+ */
+.colorPink {
+    color: var(--secondary-color)!important;
+}
+
+.colorBlue {
+    color: var(--primary-color)!important;
+}
+
+.btnBlue {
+    transition: .4s;
+    display: inline-block;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.btnBlue:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    color: white;
+}
+
+.btnPink {
+    transition: .4s;
+    display: inline-block;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.btnPink:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    color: white;
+}
+
+.btnRed { 
+    transition: .4s;
+    display: inline-block;
+    background: red;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.btnRed:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    color: white;
+}
+
+.btnOrange { 
+    transition: .4s;
+    display: inline-block;
+    background: orangered;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.btnOrange:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    color: white;
+}
+
+.btnGreen {
+    transition: .4s;
+    display: inline-block;
+    background: green;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.btnGreen:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    color: white;
+}
+
+.links { 
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.links:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.color-pink {
+    color: var(--secondary-color);
+}
+
+
+/*
+  ==========================================
+    Résolution d'écran 
+  ==========================================
+  */
+  
+  @media (max-width: 1365px) {
+    .webylo-acc {
+        width: 80%;
+        height: 80%;
+    }
+    
+  }
